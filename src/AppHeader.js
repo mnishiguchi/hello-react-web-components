@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { css } from '@emotion/css'
 import logo from './logo.svg'
 
@@ -33,6 +35,10 @@ function AppHeader({ name }) {
       </span>
     </header>
   )
+}
+
+AppHeader.propTypes = {
+  name: PropTypes.string.isRequired
 }
 
 export default AppHeader
