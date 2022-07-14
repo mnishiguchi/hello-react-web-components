@@ -1,21 +1,36 @@
+import { css } from '@emotion/css'
 import logo from './logo.svg'
-import './AppHeader.css'
 
-function AppHeader() {
+function AppHeader({ name }) {
   return (
-    <header className='App-header'>
-      <img src={logo} className='App-logo' alt='logo' />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className='App-link'
-        href='https://reactjs.org'
-        target='_blank'
-        rel='noopener noreferrer'
+    <header
+      className={css`
+        background-color: #282c34;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      `}
+    >
+      <img
+        src={logo}
+        className={css`
+          height: 10vmin;
+          pointer-events: none;
+        `}
+        alt='logo'
+      />
+      <span
+        className={css`
+          color: #61dafb;
+        `}
       >
-        Learn React
-      </a>
+        Learn {name}
+      </span>
     </header>
   )
 }
