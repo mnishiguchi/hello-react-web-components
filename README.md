@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Hello React Web Components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Uses Bitovi's [react-to-webcomponent](https://www.npmjs.com/package/react-to-webcomponent).
+
+![](https://user-images.githubusercontent.com/7563926/179020198-2a08b856-8e34-42a3-aedc-86fdde7a4408.png)
 
 ## Available Scripts
 
